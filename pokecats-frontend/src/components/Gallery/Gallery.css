@@ -1,0 +1,111 @@
+/* Gallery.css */
+.gallery {
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 20px;
+}
+
+.gallery__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.gallery__description {
+  font-size: 18px;
+  width: 75%;
+  margin: 15px auto 20px;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery__card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 282px;
+  height: 361px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery__image {
+  width: 100%;
+  height: 282px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.gallery__legend {
+  background-color: #fff; /* Fondo blanco para la leyenda */
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 20px auto; /* Margen para separar del contenido anterior */
+  padding: 10px; /* Ajusta el espaciado interior según tus necesidades */
+}
+
+.gallery__legend-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos de la lista se muestren en varias líneas si no caben en una sola */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  padding: 0;
+  margin: 0;
+}
+
+.gallery__legend-item {
+  display: flex;
+  align-items: center;
+  margin: 5px; /* Espaciado entre elementos de la lista */
+}
+
+.gallery__legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px; /* Espaciado entre el color y el nombre */
+}
+
+.gallery__tab {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gallery__show-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ff3b3f; /* Color rojo */
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.gallery__show-more:hover {
+  background-color: #c03a3e; /* Color más claro que #ff3b3f */
+}
+
+@media screen and (max-width: 353px) {
+  .gallery__grid {
+    margin: auto;
+  }
+  .gallery__card {
+    max-width: 250px; /* Reducción adicional del ancho máximo de la imagen para 320px */
+    margin: auto; /* Eliminación del margen derecho en pantallas pequeñas */
+    margin-left: -10px;
+  }
+}

@@ -1,0 +1,17 @@
+.notfound {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.notfound__link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: box-shadow 0.3s ease; /* Agrega una transición suave a la sombra */
+}
+
+.notfound__link:hover {
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3); /* Agrega una sombra al pasar el ratón por encima */
+}

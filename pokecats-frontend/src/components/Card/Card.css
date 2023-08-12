@@ -1,0 +1,32 @@
+.card {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card__image {
+  width: 40%; /* Ocupa el 40% del ancho del contenedor card */
+  height: auto;
+  border-radius: 8px;
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.card__details-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card__details-text {
+  font-size: 18px;
+}

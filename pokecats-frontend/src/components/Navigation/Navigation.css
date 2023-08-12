@@ -1,0 +1,56 @@
+/* Navigation Component */
+.navigation {
+  position: relative;
+}
+
+.navigation__button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  z-index: 1;
+}
+
+.navigation__bar {
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  transition: background-color 0.3s ease;
+}
+
+/* Las barras horizontales permanecerán en negro al darles click */
+.navigation__button--open .navigation__bar {
+  background-color: #000;
+}
+
+.navigation__menu {
+  position: absolute;
+  top: 50px;
+  right: 0; /* Abre hacia la izquierda */
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__menu-item {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Agregamos una transición de sombreado */
+}
+
+/* Efecto hover para los botones */
+.navigation__button:hover .navigation__bar,
+.navigation__menu-item:hover {
+  background-color: #e0e0e0;
+}
