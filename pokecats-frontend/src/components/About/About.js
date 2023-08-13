@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import aboutImgOne from '../../images/AboutImgOne.svg';
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
@@ -13,7 +14,9 @@ function About() {
           contribuir a cambiar la situación de los gatitos sin hogar en nuestro
           distrito. ¡Ven, te estamos esperando!
         </p>
-        <button className='about__content-button'>¡Únete!</button>
+        <Link to='/donate' className='about__content-button'>
+          Únete!
+        </Link>
       </div>
     </div>
   );

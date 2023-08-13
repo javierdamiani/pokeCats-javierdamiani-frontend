@@ -1,6 +1,7 @@
 import React from 'react';
 import './Presentation.css';
 import PresentationImg from '../../images/PresentationImg.jpg';
+import { Link } from 'react-router-dom';
 
 function Presentation() {
   return (
@@ -16,12 +17,18 @@ function Presentation() {
           convertirse en animales queridos.
         </p>
         <div className='presentation__content-buttons'>
-          <button className='presentation__content-button presentation__content-button--purple'>
+          <Link
+            to='/donate'
+            className='presentation__content-button presentation__content-button--purple'
+          >
             Donar
-          </button>
-          <button className='presentation__content-button presentation__content-button--red'>
+          </Link>
+          <Link
+            to='donate'
+            className='presentation__content-button presentation__content-button--red'
+          >
             Adoptar
-          </button>
+          </Link>
         </div>
       </div>
       <img

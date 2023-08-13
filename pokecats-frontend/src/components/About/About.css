@@ -44,6 +44,7 @@
   background-color: #ff3b3f; /* Color rojo */
   color: #ffffff;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .about__content-button:hover {

@@ -1,16 +1,14 @@
-/* Contact.css */
 .contact {
   display: flex;
   align-items: center;
-  background-color: #f4f1ed; /* Color de fondo del componente App.js */
+  /* background-color: #f4f1ed; */
   padding: 20px;
   margin: auto;
-  border: 1px solid red;
   max-width: 80%;
 }
 
 .contact__img {
-  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  width: 200px;
   height: auto;
   margin-right: 20px;
 }
@@ -36,17 +34,45 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: #ff3b3f; /* Color rojo original */
-  border-radius: 50%; /* Agregar bordes redondeados para obtener un botón circular */
+  background-color: #ff3b3f;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .contact__button img {
-  width: 60%; /* Ajustar el tamaño de la imagen dentro del botón */
+  width: 60%;
 }
 
 .contact__button:hover {
-  background-color: #c03a3e; /* Color ligeramente más oscuro que #ff3b3f en el hover */
+  background-color: #c03a3e;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact__img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact__details-title {
+    font-size: 20px;
+  }
+
+  .contact__details-text {
+    font-size: 16px;
+  }
+
+  .contact__button {
+    width: 30px;
+    height: 30px;
+  }
 }

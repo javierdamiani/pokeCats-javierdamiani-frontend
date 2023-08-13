@@ -1,16 +1,5 @@
-/* Reset de estilos */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
+@import url('../../vendor/normalize.css');
 
-/* Estilos generales */
 .page {
   font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
@@ -21,28 +10,25 @@ li {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  padding: 28px 10px; /* Padding base para todos los tamaños de pantalla */
-  box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+  padding: 28px 10px;
+  box-sizing: border-box;
 }
 
-/* Media query para pantallas más grandes (720px y más) */
 @media screen and (min-width: 720px) {
   .page {
-    padding: 45px 20px; /* Ajuste del padding para pantallas más grandes */
+    padding: 45px 20px;
   }
 }
 
-/* Media query para pantallas pequeñas (320px) */
 @media screen and (max-width: 320px) {
   .page {
-    padding: 28px 5px; /* Ajuste del padding para pantallas muy pequeñas */
+    padding: 28px 5px;
   }
 }
 
-/* Ajuste de imágenes y videos para evitar desbordamiento */
 img,
 video {
   box-sizing: border-box;
   width: 100%;
-  max-width: 100%; /* Esto evita que las imágenes superen su tamaño original */
+  max-width: 100%;
 }
