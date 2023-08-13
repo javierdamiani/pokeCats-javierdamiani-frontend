@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pokeCats-javierdamiani-frontend/static/css/main.e6940fe8.css",
-    "main.js": "/pokeCats-javierdamiani-frontend/static/js/main.ade25f73.js",
+    "main.js": "/pokeCats-javierdamiani-frontend/static/js/main.cb46100e.js",
     "static/js/787.047421f0.chunk.js": "/pokeCats-javierdamiani-frontend/static/js/787.047421f0.chunk.js",
     "static/media/AboutImgOne.svg": "/pokeCats-javierdamiani-frontend/static/media/AboutImgOne.ca9d170f8a0c0a3556eeb24e317b6a5e.svg",
     "static/media/PresentationImg.jpg": "/pokeCats-javierdamiani-frontend/static/media/PresentationImg.2f2085548240cb61f211.jpg",
@@ -25,11 +25,11 @@
     "static/media/Home.svg": "/pokeCats-javierdamiani-frontend/static/media/Home.4f27201e5e20cbf061bc0b8822ec4961.svg",
     "index.html": "/pokeCats-javierdamiani-frontend/index.html",
     "main.e6940fe8.css.map": "/pokeCats-javierdamiani-frontend/static/css/main.e6940fe8.css.map",
-    "main.ade25f73.js.map": "/pokeCats-javierdamiani-frontend/static/js/main.ade25f73.js.map",
+    "main.cb46100e.js.map": "/pokeCats-javierdamiani-frontend/static/js/main.cb46100e.js.map",
     "787.047421f0.chunk.js.map": "/pokeCats-javierdamiani-frontend/static/js/787.047421f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6940fe8.css",
-    "static/js/main.ade25f73.js"
+    "static/js/main.cb46100e.js"
   ]
 }
