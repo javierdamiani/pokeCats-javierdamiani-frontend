@@ -32,9 +32,24 @@ function Gallery() {
 
   return (
     <div className='gallery'>
-      <div className='gallery__legend'>{/* ... Same as before */}</div>
+      <div className='gallery__legend'>
+        <ul className='gallery__legend-list'>
+          {background.map((type) => (
+            <li className='gallery__legend-item' key={type.name}>
+              <div
+                className='gallery__legend-color'
+                style={{ backgroundColor: type.color }}
+              ></div>
+              {type.name}
+            </li>
+          ))}
+        </ul>
+      </div>
       <h2 className='gallery__title'>Galería de fotos de los PokeCats</h2>
-      <p className='gallery__description'>{/* ... Same as before */}</p>
+      <p className='gallery__description'>
+        Estas son algunas de las fotos de los PokeCats que hemos tomado. Cada
+        color de tarjeta representa el tipo de Pokemon que es cada PokeCat
+      </p>
       <ul className='gallery__grid'>
         {pokemonList.slice(0, visibleImages).map((card, index) => {
           const backgroundColor = background.find(
