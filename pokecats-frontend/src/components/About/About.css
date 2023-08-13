@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Cambio a envolver elementos en pantallas pequeñas */
+  flex-wrap: wrap;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
@@ -17,11 +17,11 @@
 }
 
 .about__content {
-  width: 100%; /* Cambio del ancho para ocupar todo el espacio disponible */
+  width: 100%;
   max-width: 50%;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px; /* Espacio superior para separar la imagen del contenido en pantallas pequeñas */
+  margin-top: 20px;
 }
 
 .about__content-title {
@@ -41,17 +41,16 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #ff3b3f; /* Color rojo */
+  background-color: #ff3b3f;
   color: #ffffff;
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
 .about__content-button:hover {
-  background-color: #c03a3e; /* Color más claro que #ff3b3f */
+  background-color: #c03a3e;
 }
 
-/* Media query para pantallas de 720px */
 @media screen and (max-width: 720px) {
   .about__img {
     max-width: 300px;
@@ -62,25 +61,23 @@
   }
 }
 
-/* Media query para pantallas de 480px */
 @media screen and (max-width: 480px) {
   .about__img {
     max-width: 250px;
   }
 }
 
-/* Media query para pantallas de 320px */
 @media screen and (max-width: 353px) {
   .about {
     max-width: 300px;
     width: 85%;
   }
   .about__img {
-    max-width: 200px; /* Reducción adicional del ancho máximo de la imagen para 320px */
-    margin-right: 0; /* Eliminación del margen derecho en pantallas pequeñas */
+    max-width: 200px;
+    margin-right: 0;
   }
 
   .about__content {
-    max-width: 100%; /* Cambio del ancho del contenido para ocupar todo el espacio disponible en pantallas pequeñas */
+    max-width: 100%;
   }
 }

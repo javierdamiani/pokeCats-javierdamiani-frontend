@@ -3,15 +3,15 @@
   height: 75px;
   max-width: 880px;
   margin: 0 auto;
-  padding: 0 10px; /* Agregado de padding para separar el contenido de los bordes */
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+  box-sizing: border-box;
 }
 
 .header__logo {
-  flex: 0 0 auto; /* Evita que el logo intente crecer */
+  flex: 0 0 auto;
   height: 75px;
 }
 
@@ -19,9 +19,8 @@
   height: 75px;
 }
 
-/* Media query para pantallas más pequeñas */
 @media screen and (max-width: 480px) {
   .header {
-    padding: 0 5px; /* Reducción de padding para pantallas pequeñas */
+    padding: 0 5px;
   }
 }

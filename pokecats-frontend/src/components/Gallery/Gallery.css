@@ -1,4 +1,3 @@
-/* Gallery.css */
 .gallery {
   padding: 20px;
   min-height: calc(100vh - 60px);
@@ -48,18 +47,18 @@
 }
 
 .gallery__legend {
-  background-color: #fff; /* Fondo blanco para la leyenda */
+  background-color: #fff;
   width: 100%;
-  max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
-  margin: 20px auto; /* Margen para separar del contenido anterior */
-  padding: 10px; /* Ajusta el espaciado interior según tus necesidades */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .gallery__legend-list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos de la lista se muestren en varias líneas si no caben en una sola */
-  justify-content: center; /* Centra los elementos horizontalmente */
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -67,14 +66,14 @@
 .gallery__legend-item {
   display: flex;
   align-items: center;
-  margin: 5px; /* Espaciado entre elementos de la lista */
+  margin: 5px;
 }
 
 .gallery__legend-color {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin-right: 5px; /* Espaciado entre el color y el nombre */
+  margin-right: 5px;
 }
 
 .gallery__tab {
@@ -90,13 +89,13 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #ff3b3f; /* Color rojo */
+  background-color: #ff3b3f;
   color: #ffffff;
   transition: background-color 0.3s ease;
 }
 
 .gallery__show-more:hover {
-  background-color: #c03a3e; /* Color más claro que #ff3b3f */
+  background-color: #c03a3e;
 }
 
 @media screen and (max-width: 353px) {
@@ -104,8 +103,8 @@
     margin: auto;
   }
   .gallery__card {
-    max-width: 250px; /* Reducción adicional del ancho máximo de la imagen para 320px */
-    margin: auto; /* Eliminación del margen derecho en pantallas pequeñas */
+    max-width: 250px;
+    margin: auto;
     margin-left: -10px;
   }
 }
