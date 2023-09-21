@@ -19,6 +19,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/donate' element={<Donate />} />
+          <Route path='*' element={<Main />} />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
         <Footer />
