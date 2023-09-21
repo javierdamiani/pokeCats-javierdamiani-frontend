@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer';
 import Contact from '../Contact/Contact';
 import Gallery from '../Gallery/Gallery';
 import Donate from '../Donate/Donate';
-import NotFoundPage from '../NotFoundPage/NotFoundPage';
+// import NotFoundPage from '../NotFoundPage/NotFoundPage';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/donate' element={<Donate />} />
           <Route path='*' element={<Main />} />
-          <Route path='*' element={<NotFoundPage />} />
+          {/* <Route path='*' element={<NotFoundPage />} /> */}
         </Routes>
         <Footer />
       </div>
